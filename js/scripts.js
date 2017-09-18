@@ -14,6 +14,10 @@ $(document).ready(function(){
       return grocery.toUpperCase();
     });
 
+    upperGroceries.forEach(function(upperGrocery) {
+      $(".list").prepend("<li>" + upperGrocery + "</li>");
+    });
+
 
     // groceries.forEach(function(grocery){
     //   var groceryInput = $("input#" + grocery).val();
